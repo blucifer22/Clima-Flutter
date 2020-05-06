@@ -32,6 +32,7 @@ class _LocationScreenState extends State<LocationScreen> {
         weatherIcon = 'Error';
         description = 'Unable to get weather data';
         cityName = '';
+        return;
       }
       double fullTemp = weatherData['main']['temp'];
       temp = fullTemp.toInt();
